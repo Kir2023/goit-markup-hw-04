@@ -307,12 +307,25 @@ body {
   justify-content: center;
 }
 .customer-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
   width: 168px;
   height: 88px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
+}
+.customer-link:hover,
+.customer-link:focus {
+  border: 1px solid var(--accent-color);
+}
+.customer-icon {
+  fill: #8e8f99;
+}
+.customer-link:hover .customer-icon,
+.customer-link:focus .customer-icon {
+  fill: var(--accent-color);
 }
 /* FOOTER */
 .footer {
