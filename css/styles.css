@@ -259,6 +259,8 @@ body {
 .team-list-item {
   flex-basis: calc((100%-72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
   background-color: var(--primary-text-color-theme-light);
 }
 .team {
@@ -284,9 +286,7 @@ body {
   color: var(--primary-text-color-theme-dark);
 }
 .team-list-item-member {
-  padding: 32px 16px;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08);
+  padding: 32px 0;
   border-radius: 0px 0px 4px 4px;
 }
 .social-media-list {
@@ -307,15 +307,14 @@ body {
 .social-media-link:focus {
   background-color: var(--accent-color);
 }
+.social-media-icon {
+  fill: var(--secondary-text-color-theme-light);
+}
 /* CUSTOMERS SECTION */
 .customers-list {
   display: flex;
   gap: 24px;
   justify-content: center;
-}
-.customers-list-item {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .customer-link {
   display: flex;
@@ -362,13 +361,18 @@ body {
   width: 264px;
   font-family: var(--main-font-family);
   font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color-theme-light);
 }
 .footer-container {
   display: flex;
-  gap: 120px;
+  align-items: baseline;
+}
+.footer-left-side {
+  margin-right: 120px;
 }
 .social-media-list-footer {
   display: flex;
@@ -387,6 +391,9 @@ body {
 .social-media-link-footer:hover,
 .social-media-link-footer:focus {
   background-color: #31d0aa;
+}
+.social-media-icon-footer {
+  fill: var(--secondary-text-color-theme-light);
 }
 /* Portfolio */
 .portfolio-section {
@@ -444,12 +451,16 @@ body {
   letter-spacing: 0.02em;
   color: var(--primary-text-color-theme-dark);
 }
+.portfolio-link {
+  display: block;
+}
 .portfolio-list-item-description {
   border: 1px solid var(--portfolio-btn-color);
   border-top: none;
   padding: 32px 16px;
 }
-.portfolio-list-item:hover {
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
 }
