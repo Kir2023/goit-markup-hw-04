@@ -186,7 +186,6 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  align-items: center;
   letter-spacing: 0.04em;
   color: var(--primary-text-color-theme-light);
   background-color: var(--primary-color);
@@ -194,6 +193,7 @@ body {
   margin: 0 auto 0 auto;
   border-radius: 4px;
   border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .modal-open-btn:hover,
 .modal-open-btn:focus {
@@ -214,7 +214,6 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
-  margin-top: 8px;
   color: var(--secondary-text-color-theme-dark);
 }
 .values-list-item {
@@ -369,9 +368,16 @@ body {
   width: 264px;
   font-family: var(--main-font-family);
   font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 16px;
   line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color-theme-light);
+}
+.social-media-text {
+  font-family: var(--main-font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 16px;
   letter-spacing: 0.02em;
   color: var(--primary-text-color-theme-light);
 }
@@ -385,7 +391,6 @@ body {
 .social-media-list-footer {
   display: flex;
   gap: 16px;
-  margin-top: 16px;
 }
 .social-media-link-footer {
   display: flex;
