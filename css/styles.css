@@ -367,7 +367,7 @@ body {
   margin-bottom: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--secondary-text-color-theme-light);
+  color: var(--primary-text-color-theme-light);
 }
 .footer-container {
   display: flex;
