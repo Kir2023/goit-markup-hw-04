@@ -75,6 +75,8 @@ body {
 /* HEADER */
 .page-header {
   border-bottom: 1px solid var(--portfolio-btn-color);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-container {
   display: flex;
@@ -153,7 +155,10 @@ body {
   background-color: var(--secondary-text-color-theme-dark);
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/hero/bg.jpg);
-  background-size: 1440px, cover;
+  background-size: cover;
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
   padding-top: 188px;
   padding-bottom: 188px;
   align-items: center;
@@ -219,6 +224,8 @@ body {
   align-items: center;
   width: 264px;
   height: 112px;
+  border-radius: 4px;
+  margin-bottom: 8px;
   background-color: var(--secondary-text-color-theme-light);
 }
 .values-list-text {
@@ -305,6 +312,10 @@ body {
   display: flex;
   gap: 24px;
   justify-content: center;
+}
+.customers-list-item {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .customer-link {
   display: flex;
